@@ -3,15 +3,25 @@
    ========================================================================== */
 
 /**
+ * Variables
+ *
+ * It is recommended to override these.
+ *
+ * 1. Namespace of bits.css's classes.
+ */
+
+$bits-ns: 'bits-' !default; /* 1 */
+
+/**
  * Clean link
  *
  * A link without any text-decoration at all.
  */
 
-.u-linkClean,
-.u-linkClean:hover,
-.u-linkClean:focus,
-.u-linkClean:active {
+.#{$bits-ns}u-linkClean,
+.#{$bits-ns}u-linkClean:hover,
+.#{$bits-ns}u-linkClean:focus,
+.#{$bits-ns}u-linkClean:active {
   text-decoration: none;
 }
 
@@ -22,24 +32,25 @@
  * icon, where only one piece of text should display the underline when the
  * link is the subject of user interaction.
  *
- * Example HTML:
+ * --------------
+ * Example usage:
  *
  * <a class="u-linkComplex" href="#">
- *     Link complex
- *     <span class="u-linkComplex-target">target</span>
+ *   Link complex
+ *   <span class="u-linkComplex-target">target</span>
  * </a>
  */
 
-.u-linkComplex,
-.u-linkComplex:hover,
-.u-linkComplex:focus,
-.u-linkComplex:active {
+.#{$bits-ns}u-linkComplex,
+.#{$bits-ns}u-linkComplex:hover,
+.#{$bits-ns}u-linkComplex:focus,
+.#{$bits-ns}u-linkComplex:active {
   text-decoration: none;
 }
 
-.u-linkComplex:hover .u-linkComplex-target,
-.u-linkComplex:focus .u-linkComplex-target,
-.u-linkComplex:active .u-linkComplex-target {
+.#{$bits-ns}u-linkComplex:hover .#{$bits-ns}u-linkComplex-target,
+.#{$bits-ns}u-linkComplex:focus .#{$bits-ns}u-linkComplex-target,
+.#{$bits-ns}u-linkComplex:active .#{$bits-ns}u-linkComplex-target {
   text-decoration: underline;
 }
 
@@ -49,10 +60,10 @@
  * Combination of traits commonly used in vertical navigation lists.
  */
 
-.u-linkBlock,
-.u-linkBlock:hover,
-.u-linkBlock:focus,
-.u-linkBlock:active {
+.#{$bits-ns}u-linkBlock,
+.#{$bits-ns}u-linkBlock:hover,
+.#{$bits-ns}u-linkBlock:focus,
+.#{$bits-ns}u-linkBlock:active {
   display: block;
   text-decoration: none;
 }
@@ -63,14 +74,15 @@
  * Another interactive element, e.g., `button`, styled to look like an anchor.
  * Relies on the use of a placeholder anchor (and ideally ARIA).
  *
- * Example HTML:
+ * --------------
+ * Example usage:
  *
  * <button class="u-linkPseudo">
- *     <a role="presentation">Button content</a>
+ *   <a role="presentation">Button content</a>
  * </button>
  */
 
-.u-linkPseudo {
+.#{$bits-ns}u-linkPseudo {
   display: inline;
   padding: 0;
   border: 0;
@@ -81,9 +93,9 @@
   font: inherit;
 }
 
-.u-linkPseudo:hover,
-.u-linkPseudo:focus,
-.u-linkPseudo:active {
+.#{$bits-ns}u-linkPseudo:hover,
+.#{$bits-ns}u-linkPseudo:focus,
+.#{$bits-ns}u-linkPseudo:active {
   background: transparent;
   color: inherit;
 }
