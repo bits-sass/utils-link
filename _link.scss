@@ -7,10 +7,10 @@
  *
  * It is recommended to override these.
  *
- * 1. Namespace of bits.css's classes.
+ * 1. Utility namespace.
  */
 
-$bits-ns: 'bits-' !default; /* 1 */
+$bits-utils-ns: 'bits-' !default; /* 1 */
 
 /**
  * Clean link
@@ -18,10 +18,10 @@ $bits-ns: 'bits-' !default; /* 1 */
  * A link without any text-decoration at all.
  */
 
-.#{$bits-ns}u-linkClean,
-.#{$bits-ns}u-linkClean:hover,
-.#{$bits-ns}u-linkClean:focus,
-.#{$bits-ns}u-linkClean:active {
+.#{$bits-utils-ns}u-linkClean,
+.#{$bits-utils-ns}u-linkClean:hover,
+.#{$bits-utils-ns}u-linkClean:focus,
+.#{$bits-utils-ns}u-linkClean:active {
   text-decoration: none;
 }
 
@@ -41,16 +41,16 @@ $bits-ns: 'bits-' !default; /* 1 */
  * </a>
  */
 
-.#{$bits-ns}u-linkComplex,
-.#{$bits-ns}u-linkComplex:hover,
-.#{$bits-ns}u-linkComplex:focus,
-.#{$bits-ns}u-linkComplex:active {
+.#{$bits-utils-ns}u-linkComplex,
+.#{$bits-utils-ns}u-linkComplex:hover,
+.#{$bits-utils-ns}u-linkComplex:focus,
+.#{$bits-utils-ns}u-linkComplex:active {
   text-decoration: none;
 }
 
-.#{$bits-ns}u-linkComplex:hover .#{$bits-ns}u-linkComplex-target,
-.#{$bits-ns}u-linkComplex:focus .#{$bits-ns}u-linkComplex-target,
-.#{$bits-ns}u-linkComplex:active .#{$bits-ns}u-linkComplex-target {
+.#{$bits-utils-ns}u-linkComplex:hover .#{$bits-utils-ns}u-linkComplex-target,
+.#{$bits-utils-ns}u-linkComplex:focus .#{$bits-utils-ns}u-linkComplex-target,
+.#{$bits-utils-ns}u-linkComplex:active .#{$bits-utils-ns}u-linkComplex-target {
   text-decoration: underline;
 }
 
@@ -60,10 +60,10 @@ $bits-ns: 'bits-' !default; /* 1 */
  * Combination of traits commonly used in vertical navigation lists.
  */
 
-.#{$bits-ns}u-linkBlock,
-.#{$bits-ns}u-linkBlock:hover,
-.#{$bits-ns}u-linkBlock:focus,
-.#{$bits-ns}u-linkBlock:active {
+.#{$bits-utils-ns}u-linkBlock,
+.#{$bits-utils-ns}u-linkBlock:hover,
+.#{$bits-utils-ns}u-linkBlock:focus,
+.#{$bits-utils-ns}u-linkBlock:active {
   display: block;
   text-decoration: none;
 }
@@ -82,7 +82,7 @@ $bits-ns: 'bits-' !default; /* 1 */
  * </button>
  */
 
-.#{$bits-ns}u-linkPseudo {
+.#{$bits-utils-ns}u-linkPseudo {
   display: inline;
   padding: 0;
   border: 0;
@@ -93,9 +93,9 @@ $bits-ns: 'bits-' !default; /* 1 */
   font: inherit;
 }
 
-.#{$bits-ns}u-linkPseudo:hover,
-.#{$bits-ns}u-linkPseudo:focus,
-.#{$bits-ns}u-linkPseudo:active {
+.#{$bits-utils-ns}u-linkPseudo:hover,
+.#{$bits-utils-ns}u-linkPseudo:focus,
+.#{$bits-utils-ns}u-linkPseudo:active {
   background: transparent;
   color: inherit;
 }
