@@ -1,14 +1,14 @@
-# Bits.scss utilities: link
+# Bits.sass utilities: link
 
-Utility classes for link-related CSS. See [other utilities](https://github.com/bits-scss/utils).
+Utility classes for link-related CSS. See [other utilities](https://github.com/bits-sass/utils).
 
-Read more about [Bits.scss toolkit](https://github.com/bits-scss/bits.scss).
+Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 
 ## Installation
 
-* __Bower:__ `bower install --save bits-scss-utils-link`
-* __Download:__ [zip](https://github.com/bits-scss/utils-link/zipball/master), [tar.gz](https://github.com/bits-scss/utils-link/tarball/master)
-* __Git:__ `git clone https://github.com/bits-scss/utils-link.git`
+* __Bower:__ `bower install --save bits-sass-utils-link`
+* __Download:__ [zip](https://github.com/bits-sass/utils-link/zipball/master), [tar.gz](https://github.com/bits-sass/utils-link/tarball/master)
+* __Git:__ `git clone https://github.com/bits-sass/utils-link.git`
 
 ## Available SASS variables
 
