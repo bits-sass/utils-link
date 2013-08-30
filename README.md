@@ -16,8 +16,8 @@ Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 
 ## Available utility classes
 
-* `u-linkClean` - link with clean style
-* `u-linkComplex` - complex link with a specified target, that receives all styles
+* `u-linkClean` - link without any text-decoration
+* `u-linkComplex` - complex link with a specified target that is underlined
 * `u-linkBlock` - block-level link
 * `u-linkPseudo` - button styled to look like an anchor
 
