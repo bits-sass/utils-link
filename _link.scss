@@ -12,21 +12,25 @@
 
 $bits-utils-ns: 'bits-' !default; /* 1 */
 
+/* -------------------------------------------------------------------------- */
+
 /**
  * Clean link
  *
- * A link without any text-decoration at all.
+ * Link without any text-decoration.
  */
 
-.#{$bits-utils-ns}u-linkClean,
-.#{$bits-utils-ns}u-linkClean:hover,
-.#{$bits-utils-ns}u-linkClean:focus,
-.#{$bits-utils-ns}u-linkClean:active {
-  text-decoration: none;
+.#{$bits-utils-ns}u-linkClean {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none !important;
+  }
 }
 
 /**
- * Link complex
+ * Complex link
  *
  * A common pattern is to have a link with several pieces of text and/or an
  * icon, where only one piece of text should display the underline when the
@@ -34,6 +38,7 @@ $bits-utils-ns: 'bits-' !default; /* 1 */
  *
  * --------------
  * Example usage:
+ * --------------
  *
  * <a class="u-linkComplex" href="#">
  *   Link complex
@@ -41,17 +46,23 @@ $bits-utils-ns: 'bits-' !default; /* 1 */
  * </a>
  */
 
-.#{$bits-utils-ns}u-linkComplex,
-.#{$bits-utils-ns}u-linkComplex:hover,
-.#{$bits-utils-ns}u-linkComplex:focus,
-.#{$bits-utils-ns}u-linkComplex:active {
-  text-decoration: none;
+.#{$bits-utils-ns}u-linkComplex {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none !important;
+  }
 }
 
-.#{$bits-utils-ns}u-linkComplex:hover .#{$bits-utils-ns}u-linkComplex-target,
-.#{$bits-utils-ns}u-linkComplex:focus .#{$bits-utils-ns}u-linkComplex-target,
-.#{$bits-utils-ns}u-linkComplex:active .#{$bits-utils-ns}u-linkComplex-target {
-  text-decoration: underline;
+.#{$bits-utils-ns}u-linkComplex {
+  &:hover,
+  &:focus,
+  &:active {
+    .#{$bits-utils-ns}u-linkComplex-target {
+      text-decoration: underline !important;
+    }
+  }
 }
 
 /**
@@ -60,12 +71,14 @@ $bits-utils-ns: 'bits-' !default; /* 1 */
  * Combination of traits commonly used in vertical navigation lists.
  */
 
-.#{$bits-utils-ns}u-linkBlock,
-.#{$bits-utils-ns}u-linkBlock:hover,
-.#{$bits-utils-ns}u-linkBlock:focus,
-.#{$bits-utils-ns}u-linkBlock:active {
-  display: block;
-  text-decoration: none;
+.#{$bits-utils-ns}u-linkBlock {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    display: block !important;
+    text-decoration: none !important;
+  }
 }
 
 /**
@@ -76,6 +89,7 @@ $bits-utils-ns: 'bits-' !default; /* 1 */
  *
  * --------------
  * Example usage:
+ * --------------
  *
  * <button class="u-linkPseudo">
  *   <a role="presentation">Button content</a>
@@ -83,19 +97,24 @@ $bits-utils-ns: 'bits-' !default; /* 1 */
  */
 
 .#{$bits-utils-ns}u-linkPseudo {
-  display: inline;
-  padding: 0;
-  border: 0;
-  margin: 0;
-  background: transparent;
-  color: inherit;
-  cursor: pointer;
-  font: inherit;
+  cursor: pointer !important;
+
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: inherit !important;
+  font: inherit !important;
+
+  border: 0 !important;
+  background: transparent !important;
 }
 
-.#{$bits-utils-ns}u-linkPseudo:hover,
-.#{$bits-utils-ns}u-linkPseudo:focus,
-.#{$bits-utils-ns}u-linkPseudo:active {
-  background: transparent;
-  color: inherit;
+.#{$bits-utils-ns}u-linkPseudo {
+  &:hover,
+  &:focus,
+  &:active {
+    color: inherit !important;
+    background: transparent !important;
+  }
 }
