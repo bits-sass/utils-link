@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.4.0 (September 2, 2013)
+
 * Add `!important` to all rules
 * Reorder properties
 * Optimize `u-linkComplex`
