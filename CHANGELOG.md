@@ -3,6 +3,7 @@
 * Add `!important` to all rules
 * Reorder properties
 * Optimize `u-linkComplex`
+* Use new style for comments
 
 === 0.3.1 (July 20, 2013)
 

@@ -2,21 +2,19 @@
    Link-specific utilities
    ========================================================================== */
 
+/* Variables
+   ========================================================================== */
+
 /**
- * Variables
- *
- * It is recommended to override these.
- *
- * 1. Utility namespace.
+ * Bits.sass utilities namespace
  */
 
-$bits-utils-ns: 'bits-' !default; /* 1 */
+$bits-utils-ns: 'bits-' !default;
 
-/* -------------------------------------------------------------------------- */
+/* Utilities
+   ========================================================================== */
 
 /**
- * Clean link
- *
  * Link without any text-decoration.
  */
 
@@ -36,9 +34,7 @@ $bits-utils-ns: 'bits-' !default; /* 1 */
  * icon, where only one piece of text should display the underline when the
  * link is the subject of user interaction.
  *
- * --------------
- * Example usage:
- * --------------
+ * Example HTML:
  *
  * <a class="u-linkComplex" href="#">
  *   Link complex
@@ -82,9 +78,7 @@ $bits-utils-ns: 'bits-' !default; /* 1 */
  * Another interactive element, e.g., `button`, styled to look like an anchor.
  * Relies on the use of a placeholder anchor (and ideally ARIA).
  *
- * --------------
- * Example usage:
- * --------------
+ * Example HTML:
  *
  * <button class="u-linkPseudo">
  *   <a role="presentation">Button content</a>
@@ -103,9 +97,7 @@ $bits-utils-ns: 'bits-' !default; /* 1 */
 
   border: 0 !important;
   background: transparent !important;
-}
 
-.#{$bits-utils-ns}u-linkPseudo {
   &:hover,
   &:focus,
   &:active {
