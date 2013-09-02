@@ -2,6 +2,7 @@
 
 * Add `!important` to all rules
 * Reorder properties
+* Optimize `u-linkComplex`
 
 === 0.3.1 (July 20, 2013)
 

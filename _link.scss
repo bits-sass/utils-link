@@ -47,18 +47,13 @@ $bits-utils-ns: 'bits-' !default; /* 1 */
  */
 
 .#{$bits-utils-ns}u-linkComplex {
-  &,
+  text-decoration: none !important;
+
   &:hover,
   &:focus,
   &:active {
     text-decoration: none !important;
-  }
-}
 
-.#{$bits-utils-ns}u-linkComplex {
-  &:hover,
-  &:focus,
-  &:active {
     .#{$bits-utils-ns}u-linkComplex-target {
       text-decoration: underline !important;
     }
